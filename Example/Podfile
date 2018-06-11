@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FreesoundKit_Example' do
+  pod 'FreesoundKit', :path => '../'
+
+  target 'FreesoundKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
