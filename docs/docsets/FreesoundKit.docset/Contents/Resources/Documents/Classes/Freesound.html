@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Freesound Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Freesound" class="dashAnchor"></a>
+    <a title="Freesound Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">FreesoundKit Docs</a> (26% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">FreesoundKit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Freesound Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DataStorageManager.html">DataStorageManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Freesound.html">Freesound</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/FreesoundAnalysisDescriptors.html">FreesoundAnalysisDescriptors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FreesoundAnalysisDescriptors/LowLevel.html">– LowLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FreesoundAnalysisDescriptors/Rhythm.html">– Rhythm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FreesoundAnalysisDescriptors/Tonal.html">– Tonal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FreesoundAnalysisDescriptors/SFX.html">– SFX</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FreesoundLicense.html">FreesoundLicense</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FreesoundPreviewQuality.html">FreesoundPreviewQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FreesoundResult.html">FreesoundResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/FreesoundDescriptor.html">FreesoundDescriptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Freesound</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">Freesound</span></code></pre>
+
+                </div>
+              </div>
+            <p>Freesound** is an abstract class that manages interactions with the Freesound API.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Authorization%20information"></a>
+                <a name="//apple_ref/swift/Section/Authorization information" class="dashAnchor"></a>
+                <a href="#/Authorization%20information">
+                  <h3 class="section-name">Authorization information</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C12isAuthorizedSbvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/isAuthorized" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C12isAuthorizedSbvpZ">isAuthorized</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns whether or not the current app is authorized to use Freesound.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">isAuthorized</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/API%20methods"></a>
+                <a name="//apple_ref/swift/Section/API methods" class="dashAnchor"></a>
+                <a href="#/API%20methods">
+                  <h3 class="section-name">API methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C5setupySS4with_SS12clientSecrettFZ"></a>
+                    <a name="//apple_ref/swift/Method/setup(with:clientSecret:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C5setupySS4with_SS12clientSecrettFZ">setup(with:clientSecret:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stores client information to later communicate with API.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">setup</span><span class="p">(</span><span class="n">with</span> <span class="nv">clientID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">clientSecret</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C9authorizeyyyc7handler_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/authorize(handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C9authorizeyyyc7handler_tFZ">authorize(handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Authorizes client via OAuth2 and retrieves access token.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">authorize</span><span class="p">(</span><span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C7refreshyyFZ"></a>
+                    <a name="//apple_ref/swift/Method/refresh()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C7refreshyyFZ">refresh()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Refreshes authorization, retrieves new access and refresh tokens.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">refresh</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C10handleCodeAA0A6ResultOSSSgFZ"></a>
+                    <a name="//apple_ref/swift/Method/handleCode(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C10handleCodeAA0A6ResultOSSSgFZ">handleCode(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles the temporary authorization code generated by Freesound.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">handleCode</span><span class="p">(</span><span class="n">_</span> <span class="nv">code</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/FreesoundResult.html">FreesoundResult</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C6searchySS_ys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/search(_:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C6searchySS_ys10DictionaryVySSypGSgc7handlertFZ">search(_:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Text search.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">search</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                          <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C13contentSearchySS_ys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/contentSearch(_:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C13contentSearchySS_ys10DictionaryVySSypGSgc7handlertFZ">contentSearch(_:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Content search.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">contentSearch</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                 <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C8downloadySS_10Foundation3URLV2toyAGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/download(_:to:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C8downloadySS_10Foundation3URLV2toyAGSgc7handlertFZ">download(_:to:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Downloads a sound file to a specified URL.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">download</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="n">to</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+                            <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">URL</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C6uploady10Foundation3URLV_SS4nameSS11descriptionSSSg4packAA0A7LicenseO7licenseSb6geoTagys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/upload(_:name:description:pack:license:geoTag:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C6uploady10Foundation3URLV_SS4nameSS11descriptionSSSg4packAA0A7LicenseO7licenseSb6geoTagys10DictionaryVySSypGSgc7handlertFZ">upload(_:name:description:pack:license:geoTag:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Uploads a sound file to Freesound.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">upload</span><span class="p">(</span><span class="n">_</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+                          <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+                          <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+                          <span class="nv">pack</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                          <span class="nv">license</span><span class="p">:</span> <span class="kt"><a href="../Enums/FreesoundLicense.html">FreesoundLicense</a></span><span class="p">,</span>
+                          <span class="nv">geoTag</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+                          <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C13describeSoundySS_SSSg4nameSS4tagsSS11descriptionAA0A7LicenseO7licenseAE4packSb6geoTagys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/describeSound(_:name:tags:description:license:pack:geoTag:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C13describeSoundySS_SSSg4nameSS4tagsSS11descriptionAA0A7LicenseO7licenseAE4packSb6geoTagys10DictionaryVySSypGSgc7handlertFZ">describeSound(_:name:tags:description:license:pack:geoTag:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Describes an upload-pending sound.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeSound</span><span class="p">(</span><span class="n">_</span> <span class="nv">uploadFilename</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                 <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">tags</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                 <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                 <span class="nv">license</span><span class="p">:</span> <span class="kt"><a href="../Enums/FreesoundLicense.html">FreesoundLicense</a></span><span class="p">,</span>
+                                 <span class="nv">pack</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                                 <span class="nv">geoTag</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+                                 <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C20editSoundDescriptionySS_SSSg4nameSS4tagsSS11descriptionAA0A7LicenseO7licenseAE4packSb6geoTagys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/editSoundDescription(_:name:tags:description:license:pack:geoTag:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C20editSoundDescriptionySS_SSSg4nameSS4tagsSS11descriptionAA0A7LicenseO7licenseAE4packSb6geoTagys10DictionaryVySSypGSgc7handlertFZ">editSoundDescription(_:name:tags:description:license:pack:geoTag:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Edits an existing sound file&rsquo;s description on Freesound.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">editSoundDescription</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                        <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                                        <span class="nv">tags</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                        <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                        <span class="nv">license</span><span class="p">:</span> <span class="kt"><a href="../Enums/FreesoundLicense.html">FreesoundLicense</a></span><span class="p">,</span>
+                                        <span class="nv">pack</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                                        <span class="nv">geoTag</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+                                        <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C17getPendingUploadsyys10DictionaryVySSypGSgc7handler_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getPendingUploads(handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C17getPendingUploadsyys10DictionaryVySSypGSgc7handler_tFZ">getPendingUploads(handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves a dictionary of pending uploads.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPendingUploads</span><span class="p">(</span><span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C13bookmarkSoundySS_SSSg4nameAE8categoryys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/bookmarkSound(_:name:category:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C13bookmarkSoundySS_SSSg4nameAE8categoryys10DictionaryVySSypGSgc7handlertFZ">bookmarkSound(_:name:category:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bookmarks a sound for the logged in user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">bookmarkSound</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                          <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                          <span class="nv">category</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                          <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C9rateSoundySS_Si6ratingys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/rateSound(_:rating:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C9rateSoundySS_Si6ratingys10DictionaryVySSypGSgc7handlertFZ">rateSound(_:rating:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Rates a sound for the logged in user (rating range is 0-5).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">rateSound</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                             <span class="nv">rating</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+                             <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C12commentSoundySS_SS0C0ys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/commentSound(_:comment:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C12commentSoundySS_SS0C0ys10DictionaryVySSypGSgc7handlertFZ">commentSound(_:comment:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add a comment to a sound on Freesound.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">commentSound</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">comment</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C10getPreviewySS_10Foundation3URLV2toAA0aD7QualityO7qualityyAGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/getPreview(_:to:quality:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C10getPreviewySS_10Foundation3URLV2toAA0aD7QualityO7qualityyAGSgc7handlertFZ">getPreview(_:to:quality:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets preview audio for a sound.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPreview</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                              <span class="n">to</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+                              <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/FreesoundPreviewQuality.html">FreesoundPreviewQuality</a></span><span class="p">,</span>
+                              <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">URL</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C15getUserInstanceySS_ys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/getUserInstance(_:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C15getUserInstanceySS_ys10DictionaryVySSypGSgc7handlertFZ">getUserInstance(_:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves a user instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getUserInstance</span><span class="p">(</span><span class="n">_</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                   <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C13getUserSoundsySS_SiSg4pageAE0F4Sizeys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/getUserSounds(_:page:pageSize:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C13getUserSoundsySS_SiSg4pageAE0F4Sizeys10DictionaryVySSypGSgc7handlertFZ">getUserSounds(_:page:pageSize:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves a user&rsquo;s sounds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getUserSounds</span><span class="p">(</span><span class="n">_</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                 <span class="nv">page</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                 <span class="nv">pageSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                 <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C12getUserPacksySS_SiSg4pageAE0F4Sizeys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/getUserPacks(_:page:pageSize:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C12getUserPacksySS_SiSg4pageAE0F4Sizeys10DictionaryVySSypGSgc7handlertFZ">getUserPacks(_:page:pageSize:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves a user&rsquo;s packs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getUserPacks</span><span class="p">(</span><span class="n">_</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">page</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                <span class="nv">pageSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C25getUserBookmarkCategoriesySS_SiSg4pageAE0G4Sizeys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/getUserBookmarkCategories(_:page:pageSize:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C25getUserBookmarkCategoriesySS_SiSg4pageAE0G4Sizeys10DictionaryVySSypGSgc7handlertFZ">getUserBookmarkCategories(_:page:pageSize:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves a user&rsquo;s sound bookmark categories.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getUserBookmarkCategories</span><span class="p">(</span><span class="n">_</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                             <span class="nv">page</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                             <span class="nv">pageSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                             <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C29getUserBookmarkCategorySoundsySS_SS10categoryIDSiSg4pageAF0J4Sizeys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/getUserBookmarkCategorySounds(_:categoryID:page:pageSize:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C29getUserBookmarkCategorySoundsySS_SS10categoryIDSiSg4pageAF0J4Sizeys10DictionaryVySSypGSgc7handlertFZ">getUserBookmarkCategorySounds(_:categoryID:page:pageSize:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves sounds from a user&rsquo;s sound bookmark category.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getUserBookmarkCategorySounds</span><span class="p">(</span><span class="n">_</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                                 <span class="nv">categoryID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                                 <span class="nv">page</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                                 <span class="nv">pageSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                                 <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C15getPackInstanceySS_SiSg4pageAE0F4Sizeys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/getPackInstance(_:page:pageSize:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C15getPackInstanceySS_SiSg4pageAE0F4Sizeys10DictionaryVySSypGSgc7handlertFZ">getPackInstance(_:page:pageSize:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves a pack instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPackInstance</span><span class="p">(</span><span class="n">_</span> <span class="nv">packID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                   <span class="nv">page</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                   <span class="nv">pageSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                   <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C13getPackSoundsySS_SiSg4pageAE0F4Sizeys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/getPackSounds(_:page:pageSize:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C13getPackSoundsySS_SiSg4pageAE0F4Sizeys10DictionaryVySSypGSgc7handlertFZ">getPackSounds(_:page:pageSize:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves a pack&rsquo;s sounds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPackSounds</span><span class="p">(</span><span class="n">_</span> <span class="nv">packID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                 <span class="nv">page</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                 <span class="nv">pageSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                 <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C12downloadPackySS_10Foundation3URLV2toyAGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/downloadPack(_:to:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C12downloadPackySS_10Foundation3URLV2toyAGSgc7handlertFZ">downloadPack(_:to:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Downloads a pack&rsquo;s sounds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">downloadPack</span><span class="p">(</span><span class="n">_</span> <span class="nv">packID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="n">to</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+                                <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">URL</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C5getMeyys10DictionaryVySSypGSgc7handler_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getMe(handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C5getMeyys10DictionaryVySSypGSgc7handler_tFZ">getMe(handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves information about the logged-in user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getMe</span><span class="p">(</span><span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C11getAnalysisySS_SayAA0A10Descriptor_pG11descriptorsSb10normalizedys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/getAnalysis(_:descriptors:normalized:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C11getAnalysisySS_SayAA0A10Descriptor_pG11descriptorsSb10normalizedys10DictionaryVySSypGSgc7handlertFZ">getAnalysis(_:descriptors:normalized:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves sound analysis data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAnalysis</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                               <span class="nv">descriptors</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/FreesoundDescriptor.html">FreesoundDescriptor</a></span><span class="p">],</span>
+                               <span class="nv">normalized</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+                               <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C16getSimilarSoundsySS_ys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/getSimilarSounds(_:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C16getSimilarSoundsySS_ys10DictionaryVySSypGSgc7handlertFZ">getSimilarSounds(_:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves information about sounds similar to ID specified.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getSimilarSounds</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                    <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C11getCommentsySS_ys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/getComments(_:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C11getCommentsySS_ys10DictionaryVySSypGSgc7handlertFZ">getComments(_:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves comments made on a sound.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getComments</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                               <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/nikhilsinghmus/FreesoundKit" target="_blank" rel="external">nikhilsinghmus</a>. All rights reserved. (Last updated: 2018-06-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

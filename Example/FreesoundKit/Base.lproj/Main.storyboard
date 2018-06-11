@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +20,67 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your query here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xWR-gz-qlD">
+                                <rect key="frame" x="16" y="28" width="287" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIL-Qy-vHy">
+                                <rect key="frame" x="311" y="28" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="48" id="5dg-hW-ggF"/>
+                                </constraints>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchFreesound:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6va-GS-3Y9"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RrD-X1-VdK">
+                                <rect key="frame" x="16" y="66" width="343" height="543"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGo-Iy-d6c">
+                                <rect key="frame" x="153" y="617" width="69" height="30"/>
+                                <state key="normal" title="Download"/>
+                                <connections>
+                                    <action selector="downloadSound:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kBH-Tn-UhU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xWR-gz-qlD" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="1N3-IY-2Tw"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="FGo-Iy-d6c" secondAttribute="bottom" constant="20" id="3P3-xF-lYK"/>
+                            <constraint firstItem="RrD-X1-VdK" firstAttribute="top" secondItem="xWR-gz-qlD" secondAttribute="bottom" constant="8" id="BIq-rQ-OQe"/>
+                            <constraint firstItem="FGo-Iy-d6c" firstAttribute="top" secondItem="RrD-X1-VdK" secondAttribute="bottom" constant="8" id="J0c-1g-aLs"/>
+                            <constraint firstItem="bIL-Qy-vHy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="QiN-wT-Pbd"/>
+                            <constraint firstItem="RrD-X1-VdK" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="cpQ-UZ-snL"/>
+                            <constraint firstItem="FGo-Iy-d6c" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="e2L-wh-NKf"/>
+                            <constraint firstItem="bIL-Qy-vHy" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="huN-Y2-NTz"/>
+                            <constraint firstItem="xWR-gz-qlD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="nDb-yf-UH0"/>
+                            <constraint firstItem="RrD-X1-VdK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="nJS-jM-rgv"/>
+                            <constraint firstItem="bIL-Qy-vHy" firstAttribute="leading" secondItem="xWR-gz-qlD" secondAttribute="trailing" constant="8" id="tP6-fV-ZpA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="nhr-nM-7bA" id="usA-0e-CqC"/>
+                        <outlet property="searchTextField" destination="xWR-gz-qlD" id="9ZY-hO-g80"/>
+                        <outlet property="tableView" destination="RrD-X1-VdK" id="bHV-30-QkN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="nhr-nM-7bA">
+                    <connections>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="9GB-6B-LBG"/>
+                        <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="EoE-i8-J8O"/>
+                        <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="M1V-Gh-hWd"/>
+                        <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="wdM-4h-b4k"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="89.505247376311857"/>
         </scene>
     </scenes>
 </document>

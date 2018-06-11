@@ -2,11 +2,11 @@
 //  AppDelegate.swift
 //  FreesoundKit
 //
-//  Created by nikhilsinghmus on 06/11/2018.
-//  Copyright (c) 2018 nikhilsinghmus. All rights reserved.
+//  Copyright (c) 2018 Nikhil Singh. All rights reserved.
 //
 
 import UIKit
+import FreesoundKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        Freesound.setup(with: "", clientSecret: "")
         return true
     }
 

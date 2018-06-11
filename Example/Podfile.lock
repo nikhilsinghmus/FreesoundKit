@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (4.7.2)
+  - FreesoundKit (0.1.0):
+    - Alamofire (~> 4.7)
+
+DEPENDENCIES:
+  - FreesoundKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  FreesoundKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  FreesoundKit: a502c3eee138357306c7abd5cfc482f1473d6c23
+
+PODFILE CHECKSUM: 6a07a615ead3ab3ed7c58dbb4c316395a44ae159
+
+COCOAPODS: 1.5.2
