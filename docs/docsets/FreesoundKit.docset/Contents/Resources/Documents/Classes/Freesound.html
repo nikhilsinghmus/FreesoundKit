@@ -14,7 +14,7 @@
     <a title="Freesound Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">FreesoundKit Docs</a> (26% documented)</p>
+        <p><a href="../index.html">FreesoundKit Docs</a> (27% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -159,7 +159,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Stores client information to later communicate with API.</p>
+                        <p>Stores client information to later communicate with API. Should be called first, typically in the AppDelegate method <em>application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:)</em>.</p>
 
                       </div>
                       <div class="declaration">
@@ -169,6 +169,37 @@
                           <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">setup</span><span class="p">(</span><span class="n">with</span> <span class="nv">clientID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">clientSecret</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>clientID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The client ID registered with the Freesound API.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>clientSecret</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The client secret registered with the Freesound API.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -186,7 +217,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Authorizes client via OAuth2 and retrieves access token.</p>
+                        <p>Authorizes client via OAuth2 and retrieves access token. Should be called if not already authorized, which can be checked via the <strong>isAuthorized</strong> property. If already authorized, see <em>refresh()</em>.</p>
 
                       </div>
                       <div class="declaration">
@@ -196,6 +227,25 @@
                           <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">authorize</span><span class="p">(</span><span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure in which you may implement some input interface for the user to enter a temporary authorization code obtained after logging in to Freesound, which can then be used with <em>handleCode(_:)</em>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -213,7 +263,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Refreshes authorization, retrieves new access and refresh tokens.</p>
+                        <p>Refreshes authorization, retrieves new access and refresh tokens. Typically called if already authorized, which can be checked by accessing the <strong>isAuthorized</strong> property.</p>
 
                       </div>
                       <div class="declaration">
@@ -251,15 +301,34 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>code</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The temporary authorization code provided by Freesound to the user.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12FreesoundKit0A0C6searchySS_ys10DictionaryVySSypGSgc7handlertFZ"></a>
-                    <a name="//apple_ref/swift/Method/search(_:handler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12FreesoundKit0A0C6searchySS_ys10DictionaryVySSypGSgc7handlertFZ">search(_:handler:)</a>
+                    <a name="/s:12FreesoundKit0A0C6searchySS_SiSg4pageAE0D4Sizeys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/search(_:page:pageSize:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C6searchySS_SiSg4pageAE0D4Sizeys10DictionaryVySSypGSgc7handlertFZ">search(_:page:pageSize:handler:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -267,7 +336,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Text search.</p>
+                        <p>Text search searches sounds using tags and metadata.</p>
 
                       </div>
                       <div class="declaration">
@@ -275,9 +344,85 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">search</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                          <span class="nv">page</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                          <span class="nv">pageSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                           <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>text</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The query text to look up.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page number of results to retrieve (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The size of each returned page (nil by default, given in sounds-per-page).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following keys:
+
+<ul>
+<li><strong>count</strong>: The number of results on the page.</li>
+<li><strong>next</strong>: A link to the next page of results (nil if none).</li>
+<li><strong>results</strong>: An array of dictionaries representing information about the sounds on the current page.
+
+<ul>
+<li>Each of these dictionaries contains, by default, the following keys:
+
+<ul>
+<li><strong>id</strong>: The sound ID.</li>
+<li><strong>name</strong>: The sound name.</li>
+<li><strong>tags</strong>: The sound&rsquo;s tags.</li>
+<li><strong>username</strong>: The user who uploaded the current sound.</li>
+<li><strong>license</strong>: The license provided.</li>
+</ul></li>
+</ul></li>
+<li><strong>previous</strong>: A link to the previous page of results (nil if none).</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -285,9 +430,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12FreesoundKit0A0C13contentSearchySS_ys10DictionaryVySSypGSgc7handlertFZ"></a>
-                    <a name="//apple_ref/swift/Method/contentSearch(_:handler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12FreesoundKit0A0C13contentSearchySS_ys10DictionaryVySSypGSgc7handlertFZ">contentSearch(_:handler:)</a>
+                    <a name="/s:12FreesoundKit0A0C13contentSearchySS_SiSg4pageAE0E4Sizeys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/contentSearch(_:page:pageSize:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C13contentSearchySS_SiSg4pageAE0E4Sizeys10DictionaryVySSypGSgc7handlertFZ">contentSearch(_:page:pageSize:handler:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -295,7 +440,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Content search.</p>
+                        <p>Content search searches sounds using their content descriptors.</p>
 
                       </div>
                       <div class="declaration">
@@ -303,9 +448,189 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">contentSearch</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                 <span class="nv">page</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                 <span class="nv">pageSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                                  <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of a sound whose content descriptors should be used in the query.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page number of results to retrieve (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The size of each returned page (nil by default, given in sounds-per-page).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following keys:
+
+<ul>
+<li><strong>count</strong>: The number of results on the page.</li>
+<li><strong>next</strong>: A link to the next page of results (nil if none).</li>
+<li><strong>results</strong>: An array of dictionaries representing information about the sounds on the current page.
+
+<ul>
+<li>Each of these dictionaries contains, by default, the following keys:
+
+<ul>
+<li><strong>id</strong>: The sound ID.</li>
+<li><strong>name</strong>: The sound name.</li>
+<li><strong>tags</strong>: The sound&rsquo;s tags.</li>
+<li><strong>username</strong>: The user who uploaded the current sound.</li>
+<li><strong>license</strong>: The license provided.</li>
+</ul></li>
+</ul></li>
+<li><strong>previous</strong>: A link to the previous page of results (nil if none).</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C13contentSearchys10DictionaryVyS2SG_SiSg4pageAH0F4SizeyAFySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/contentSearch(_:page:pageSize:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C13contentSearchys10DictionaryVyS2SG_SiSg4pageAH0F4SizeyAFySSypGSgc7handlertFZ">contentSearch(_:page:pageSize:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Content search searches sounds using their content descriptors.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">contentSearch</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">],</span>
+                                 <span class="nv">page</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                 <span class="nv">pageSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                 <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A dictionary of filters and corresponding values (given as strings).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page number of results to retrieve (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The size of each returned page (nil by default, given in sounds-per-page).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following keys:
+
+<ul>
+<li><strong>count</strong>: The number of results on the page.</li>
+<li><strong>next</strong>: A link to the next page of results (nil if none).</li>
+<li><strong>results</strong>: An array of dictionaries representing information about the sounds on the current page.
+
+<ul>
+<li>Each of these dictionaries contains, by default, the following keys:
+
+<ul>
+<li><strong>id</strong>: The sound ID.</li>
+<li><strong>name</strong>: The sound name.</li>
+<li><strong>tags</strong>: The sound&rsquo;s tags.</li>
+<li><strong>username</strong>: The user who uploaded the current sound.</li>
+<li><strong>license</strong>: The license provided.</li>
+</ul></li>
+</ul></li>
+<li><strong>previous</strong>: A link to the previous page of results (nil if none).</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -332,9 +657,52 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">download</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
                             <span class="n">to</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
-                            <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">URL</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+                            <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">URL</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID number of a sound to download.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The destination URL to download a sound to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes an optional URL (nil if the file didn&rsquo;t download correctly).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -342,9 +710,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12FreesoundKit0A0C6uploady10Foundation3URLV_SS4nameSS11descriptionSSSg4packAA0A7LicenseO7licenseSb6geoTagys10DictionaryVySSypGSgc7handlertFZ"></a>
-                    <a name="//apple_ref/swift/Method/upload(_:name:description:pack:license:geoTag:handler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12FreesoundKit0A0C6uploady10Foundation3URLV_SS4nameSS11descriptionSSSg4packAA0A7LicenseO7licenseSb6geoTagys10DictionaryVySSypGSgc7handlertFZ">upload(_:name:description:pack:license:geoTag:handler:)</a>
+                    <a name="/s:12FreesoundKit0A0C6uploady10Foundation3URLV_SS4nameSaySSGSg4tagsSS11descriptionSSSg4packAA0A7LicenseO7licenseSb6geoTagys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/upload(_:name:tags:description:pack:license:geoTag:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C6uploady10Foundation3URLV_SS4nameSaySSGSg4tagsSS11descriptionSSSg4packAA0A7LicenseO7licenseSb6geoTagys10DictionaryVySSypGSgc7handlertFZ">upload(_:name:tags:description:pack:license:geoTag:handler:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -361,13 +729,123 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">upload</span><span class="p">(</span><span class="n">_</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
                           <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+                          <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                           <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
-                          <span class="nv">pack</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                          <span class="nv">pack</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                           <span class="nv">license</span><span class="p">:</span> <span class="kt"><a href="../Enums/FreesoundLicense.html">FreesoundLicense</a></span><span class="p">,</span>
                           <span class="nv">geoTag</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
                           <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL of the sound file to upload.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name for the uploaded sound.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Tags for the uploaded sound (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>description</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A description to add to the uploaded sound.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pack</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of a new/existing pack to add the sound to (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>license</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The license for the uploaded sound.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>geoTag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A boolean value indicating whether or not to geotag the sound (false by default). May request user authorization to access location data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following keys:
+
+<ul>
+<li><strong>detail</strong>: A confirmation message.</li>
+<li><strong>id</strong>: The sound ID if a description was provided, OR</li>
+<li><strong>name</strong>: The sound name if a description was not provided.</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -375,9 +853,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12FreesoundKit0A0C13describeSoundySS_SSSg4nameSS4tagsSS11descriptionAA0A7LicenseO7licenseAE4packSb6geoTagys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="/s:12FreesoundKit0A0C13describeSoundySS_SSSg4nameSaySSGSg4tagsSS11descriptionAA0A7LicenseO7licenseAE4packSb6geoTagys10DictionaryVySSypGSgc7handlertFZ"></a>
                     <a name="//apple_ref/swift/Method/describeSound(_:name:tags:description:license:pack:geoTag:handler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12FreesoundKit0A0C13describeSoundySS_SSSg4nameSS4tagsSS11descriptionAA0A7LicenseO7licenseAE4packSb6geoTagys10DictionaryVySSypGSgc7handlertFZ">describeSound(_:name:tags:description:license:pack:geoTag:handler:)</a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C13describeSoundySS_SSSg4nameSaySSGSg4tagsSS11descriptionAA0A7LicenseO7licenseAE4packSb6geoTagys10DictionaryVySSypGSgc7handlertFZ">describeSound(_:name:tags:description:license:pack:geoTag:handler:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -393,14 +871,123 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeSound</span><span class="p">(</span><span class="n">_</span> <span class="nv">uploadFilename</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-                                 <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">tags</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                 <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                                 <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                                  <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
                                  <span class="nv">license</span><span class="p">:</span> <span class="kt"><a href="../Enums/FreesoundLicense.html">FreesoundLicense</a></span><span class="p">,</span>
-                                 <span class="nv">pack</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                                 <span class="nv">pack</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                                  <span class="nv">geoTag</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
                                  <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uploadFilename</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The upload-pending file to add a description to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A name for the uploaded sound.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Tags for the uploaded sound (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>description</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A description to add to the uploaded sound.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>license</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The license for the uploaded sound.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pack</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of a new/existing pack to add the sound to (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>geoTag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A boolean value indicating whether or not to geotag the sound (false by default). May request user authorization to access location data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following keys:
+
+<ul>
+<li><strong>detail</strong>: A confirmation message.</li>
+<li><strong>id</strong>: The sound ID.</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -408,9 +995,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12FreesoundKit0A0C20editSoundDescriptionySS_SSSg4nameSS4tagsSS11descriptionAA0A7LicenseO7licenseAE4packSb6geoTagys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="/s:12FreesoundKit0A0C20editSoundDescriptionySS_SSSg4nameSaySSGSg4tagsSS11descriptionAA0A7LicenseO7licenseAE4packSb6geoTagys10DictionaryVySSypGSgc7handlertFZ"></a>
                     <a name="//apple_ref/swift/Method/editSoundDescription(_:name:tags:description:license:pack:geoTag:handler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12FreesoundKit0A0C20editSoundDescriptionySS_SSSg4nameSS4tagsSS11descriptionAA0A7LicenseO7licenseAE4packSb6geoTagys10DictionaryVySSypGSgc7handlertFZ">editSoundDescription(_:name:tags:description:license:pack:geoTag:handler:)</a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C20editSoundDescriptionySS_SSSg4nameSaySSGSg4tagsSS11descriptionAA0A7LicenseO7licenseAE4packSb6geoTagys10DictionaryVySSypGSgc7handlertFZ">editSoundDescription(_:name:tags:description:license:pack:geoTag:handler:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -427,14 +1014,121 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">editSoundDescription</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
                                         <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
-                                        <span class="nv">tags</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                        <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                                         <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
                                         <span class="nv">license</span><span class="p">:</span> <span class="kt"><a href="../Enums/FreesoundLicense.html">FreesoundLicense</a></span><span class="p">,</span>
-                                        <span class="nv">pack</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                                        <span class="nv">pack</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                                         <span class="nv">geoTag</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
                                         <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID number of a sound whose description to edit.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A new name for the sound.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>New tags for the sound (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>description</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A new description for the sound.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>license</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new license for the sound.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pack</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of a new/existing pack to add the sound to (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>geoTag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A boolean value indicating whether or not to geotag the sound (false by default). May request user authorization to access location data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following key:
+
+<ul>
+<li><strong>detail</strong>: A confirmation message.</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -463,6 +1157,31 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, as an optional dictionary with the keys:
+
+<ul>
+<li><strong>pending_description</strong>: An array of filenames for sounds pending description.</li>
+<li><strong>pending_processing</strong>: An array of dictionaries, each representing a sound.</li>
+<li><strong>pending_moderation</strong>: An array of dictionaries, each representing a sound.</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -487,11 +1206,70 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">bookmarkSound</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-                          <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-                          <span class="nv">category</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-                          <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
+                                 <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                 <span class="nv">category</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                 <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the sound to be bookmarked.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A new name for the bookmarked sound (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>category</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A bookmark category for the bookmarked sound (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following key:
+
+<ul>
+<li><strong>detail</strong>: A confirmation message.</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -522,6 +1300,53 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the sound to be rated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rating</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The rating for the sound as an integer from 0 to 5.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following key:
+
+<ul>
+<li><strong>detail</strong>: A confirmation message or description of an error if one occurred.</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -550,6 +1375,53 @@
                                 <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the sound to comment on.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>comment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The comment to leave.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following key:
+
+<ul>
+<li><strong>detail</strong>: A confirmation message.</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -581,6 +1453,133 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the sound whose preview audio to get.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL to download the preview audio to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>quality</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The quality (high/low) of the preview to get.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes an optional URL (nil if the file didn&rsquo;t download correctly).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12FreesoundKit0A0C13getPreviewURLySS_AA0aD7QualityO7qualityy10Foundation0E0VSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/getPreviewURL(_:quality:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C13getPreviewURLySS_AA0aD7QualityO7qualityy10Foundation0E0VSgc7handlertFZ">getPreviewURL(_:quality:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets preview URL for a sound.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPreviewURL</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                 <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/FreesoundPreviewQuality.html">FreesoundPreviewQuality</a></span><span class="p">,</span>
+                                 <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">URL</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the sound whose preview URL to get.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>quality</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The quality (high/low) of the preview soundfile whose URL to get.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes in an optional URL that points to the preview soundfile.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -608,6 +1607,53 @@
                                    <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>username</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The user whose information to retrieve.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following keys:
+
+<ul>
+<li><strong>url</strong>: URL for the user&rsquo;s Freesound website profile.</li>
+<li><strong>username</strong>: The user&rsquo;s username.</li>
+<li><strong>about</strong>: The user&rsquo;s profile&rsquo;s <q>about</q> text.</li>
+<li><strong>homepage</strong>: URI for the user&rsquo;s homepage (if listed).</li>
+<li><strong>avatar</strong>: Dictionary containing URIs for the user&rsquo;s avatar (nil if not available). Fields are <strong>Small</strong>, <strong>Medium</strong>, and <strong>Large</strong>.</li>
+<li><strong>date_joined</strong>: The date when the user joined Freesound.</li>
+<li><strong>num_sounds</strong>: Number of sounds uploaded by the user.</li>
+<li><strong>sounds</strong>: URI for a list of sounds by the user.</li>
+<li><strong>num_packs</strong>: Number of packs created by the user.</li>
+<li><strong>packs</strong>: URI for a list of packs by the user.</li>
+<li><strong>num_posts</strong>: Number of forum posts by the user.</li>
+<li><strong>num_comments</strong>: Number of comments made by the user on other users&rsquo; sounds.</li>
+<li><strong>bookmark_categories</strong>: URI for a list of bookmark categories made by the user.</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -639,6 +1685,80 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>username</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The user whose sounds to retrieve.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page number of results to retrieve (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The size of each returned page (nil by default, given in sounds-per-page).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following keys:
+
+<ul>
+<li><strong>count</strong>: The number of results on the page.</li>
+<li><strong>next</strong>: A link to the next page of results (nil if none).</li>
+<li><strong>results</strong>: An array of dictionaries representing information about the sounds on the current page.
+
+<ul>
+<li>Each of these dictionaries contains, by default, the following keys:
+
+<ul>
+<li><strong>id</strong>: The sound ID.</li>
+<li><strong>name</strong>: The sound name.</li>
+<li><strong>tags</strong>: The sound&rsquo;s tags.</li>
+<li><strong>username</strong>: The user who uploaded the current sound.</li>
+<li><strong>license</strong>: The license provided.</li>
+</ul></li>
+</ul></li>
+<li><strong>previous</strong>: A link to the previous page of results (nil if none).</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -669,6 +1789,84 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>username</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The user whose packs to retrieve.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page number of results to retrieve (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The size of each returned page (nil by default, given in packs-per-page).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following keys:
+
+<ul>
+<li><strong>count</strong>: The number of results on the page.</li>
+<li><strong>next</strong>: A link to the next page of results (nil if none).</li>
+<li><strong>results</strong>: An array of dictionaries representing information about the packs on the current page.
+
+<ul>
+<li>Each of these dictionaries contains, by default, the following keys:
+
+<ul>
+<li><strong>id</strong>: The pack ID.</li>
+<li><strong>url</strong>: The URI for the pack.</li>
+<li><strong>description</strong>: The description for the pack (if available).</li>
+<li><strong>created</strong>: Date the pack was made.</li>
+<li><strong>name</strong>: The name of the pack.</li>
+<li><strong>username</strong>: Username of the pack owner.</li>
+<li><strong>num_sounds</strong>: Number of sounds in the current pack.</li>
+<li><strong>sounds</strong>: URI for list of sounds in the current pack.</li>
+<li><strong>num_downloads</strong>: Number of times the current pack has been downloaded.</li>
+</ul></li>
+</ul></li>
+<li><strong>previous</strong>: A link to the previous page of results (nil if none).</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -698,6 +1896,79 @@
                                              <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>username</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User whose bookmark categories to retrieve.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page number of results to retrieve (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The size of each returned page (nil by default, given in bookmark-categories-per-page).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following keys:
+
+<ul>
+<li><strong>count</strong>: The number of results on the page.</li>
+<li><strong>next</strong>: A link to the next page of results (nil if none).</li>
+<li><strong>results</strong>: An array of dictionaries representing information about the packs on the current page.
+
+<ul>
+<li>Each of these dictionaries contains, by default, the following keys:
+
+<ul>
+<li><strong>url</strong>: URI for the bookmark category.</li>
+<li><strong>name</strong>: Name of the bookmark category.</li>
+<li><strong>num_sounds</strong>: Number of sounds in the bookmark category.</li>
+<li><strong>sounds</strong>: URI for list of sounds in the current bookmark category.</li>
+</ul></li>
+</ul></li>
+<li><strong>previous</strong>: A link to the previous page of results (nil if none).</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -730,15 +2001,101 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>username</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User whose bookmark category to retrieve sounds from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>categoryID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ID of the bookmark category from which to retrieve sounds.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page number of results to retrieve (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The size of each returned page (nil by default, given in sounds-per-page).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following keys:
+
+<ul>
+<li><strong>count</strong>: The number of results on the page.</li>
+<li><strong>next</strong>: A link to the next page of results (nil if none).</li>
+<li><strong>results</strong>: An array of dictionaries representing information about the packs on the current page.
+
+<ul>
+<li>Each of these dictionaries contains, by default, the following keys:
+
+<ul>
+<li><strong>id</strong>: The sound ID.</li>
+<li><strong>name</strong>: The sound name.</li>
+<li><strong>tags</strong>: The sound&rsquo;s tags.</li>
+<li><strong>username</strong>: The user who uploaded the current sound.</li>
+<li><strong>license</strong>: The license provided.</li>
+</ul></li>
+</ul></li>
+<li><strong>previous</strong>: A link to the previous page of results (nil if none).</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12FreesoundKit0A0C15getPackInstanceySS_SiSg4pageAE0F4Sizeys10DictionaryVySSypGSgc7handlertFZ"></a>
-                    <a name="//apple_ref/swift/Method/getPackInstance(_:page:pageSize:handler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12FreesoundKit0A0C15getPackInstanceySS_SiSg4pageAE0F4Sizeys10DictionaryVySSypGSgc7handlertFZ">getPackInstance(_:page:pageSize:handler:)</a>
+                    <a name="/s:12FreesoundKit0A0C15getPackInstanceySS_ys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/getPackInstance(_:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C15getPackInstanceySS_ys10DictionaryVySSypGSgc7handlertFZ">getPackInstance(_:handler:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -754,11 +2111,52 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPackInstance</span><span class="p">(</span><span class="n">_</span> <span class="nv">packID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-                                   <span class="nv">page</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-                                   <span class="nv">pageSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                                    <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>packID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ID of the pack to get information about.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary containing the following keys:
+
+<ul>
+<li><strong>id</strong>: The pack ID.</li>
+<li><strong>url</strong>: The URI for the pack.</li>
+<li><strong>description</strong>: The description for the pack (if available).</li>
+<li><strong>created</strong>: The date the pack was made.</li>
+<li><strong>name</strong>: The name of the pack.</li>
+<li><strong>username</strong>: Username of the pack owner.</li>
+<li><strong>num_sounds</strong>: Number of sounds in the current pack.</li>
+<li><strong>sounds</strong>: URI for list of sounds in the current pack.</li>
+<li><strong>num_downloads</strong>: Number of times the current pack has been downloaded.</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -790,6 +2188,80 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>packID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ID of the pack to retrieve sounds from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page number of results to retrieve (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The size of each returned page (nil by default, given in sounds-per-page).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following keys:
+
+<ul>
+<li><strong>count</strong>: The number of results on the page.</li>
+<li><strong>next</strong>: A link to the next page of results (nil if none).</li>
+<li><strong>results</strong>: An array of dictionaries representing information about the packs on the current page.
+
+<ul>
+<li>Each of these dictionaries contains, by default, the following keys:
+
+<ul>
+<li><strong>id</strong>: The sound ID.</li>
+<li><strong>name</strong>: The sound name.</li>
+<li><strong>tags</strong>: The sound&rsquo;s tags.</li>
+<li><strong>username</strong>: The user who uploaded the current sound.</li>
+<li><strong>license</strong>: The license provided.</li>
+</ul></li>
+</ul></li>
+<li><strong>previous</strong>: A link to the previous page of results (nil if none).</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -819,6 +2291,49 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>packID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ID of the pack to download sounds from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>URL to download the pakc .zip file to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes an optional URL (nil if the file didn&rsquo;t download correctly).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -845,6 +2360,43 @@
                           <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getMe</span><span class="p">(</span><span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following keys:
+
+<ul>
+<li><strong>url</strong>: URL for the user&rsquo;s Freesound website profile.</li>
+<li><strong>username</strong>: The user&rsquo;s username.</li>
+<li><strong>about</strong>: The user&rsquo;s profile&rsquo;s <q>about</q> text.</li>
+<li><strong>homepage</strong>: URI for the user&rsquo;s homepage (if listed).</li>
+<li><strong>avatar</strong>: Dictionary containing URIs for the user&rsquo;s avatar (nil if not available). Fields are <strong>Small</strong>, <strong>Medium</strong>, and <strong>Large</strong>.</li>
+<li><strong>date_joined</strong>: The date when the user joined Freesound.</li>
+<li><strong>num_sounds</strong>: Number of sounds uploaded by the user.</li>
+<li><strong>sounds</strong>: URI for a list of sounds by the user.</li>
+<li><strong>num_packs</strong>: Number of packs created by the user.</li>
+<li><strong>packs</strong>: URI for a list of packs by the user.</li>
+<li><strong>num_posts</strong>: Number of forum posts by the user.</li>
+<li><strong>num_comments</strong>: Number of comments made by the user on other users&rsquo; sounds.</li>
+<li><strong>bookmark_categories</strong>: URI for a list of bookmark categories made by the user.</li>
+<li><strong>email</strong>: Email ID of the logged in user.</li>
+<li><strong>unique_id</strong>: A unique ID associated with the user.</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -876,15 +2428,70 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ID of sound to be analyzed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>descriptors</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Analysis descriptors to retrieve for the sound file.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>normalized</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A boolean value that sets whether to retrieve normalized or absolute values for specified content descriptors.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles response data, an optional dictionary that contains keys corresponding to content descriptors.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12FreesoundKit0A0C16getSimilarSoundsySS_ys10DictionaryVySSypGSgc7handlertFZ"></a>
-                    <a name="//apple_ref/swift/Method/getSimilarSounds(_:handler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12FreesoundKit0A0C16getSimilarSoundsySS_ys10DictionaryVySSypGSgc7handlertFZ">getSimilarSounds(_:handler:)</a>
+                    <a name="/s:12FreesoundKit0A0C16getSimilarSoundsySS_SiSg4pageAE0F4Sizeys10DictionaryVySSypGSgc7handlertFZ"></a>
+                    <a name="//apple_ref/swift/Method/getSimilarSounds(_:page:pageSize:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12FreesoundKit0A0C16getSimilarSoundsySS_SiSg4pageAE0F4Sizeys10DictionaryVySSypGSgc7handlertFZ">getSimilarSounds(_:page:pageSize:handler:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -900,9 +2507,85 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">static</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">getSimilarSounds</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                    <span class="nv">page</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                    <span class="nv">pageSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                                     <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12FreesoundKit0A7Handlera">FreesoundHandler</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the sound to get sounds that are similar to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page number of results to retrieve (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The size of each returned page (nil by default, given in sounds-per-page).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following keys:
+
+<ul>
+<li><strong>count</strong>: The number of results on the page.</li>
+<li><strong>next</strong>: A link to the next page of results (nil if none).</li>
+<li><strong>results</strong>: An array of dictionaries representing information about the packs on the current page.
+
+<ul>
+<li>Each of these dictionaries contains, by default, the following keys:
+
+<ul>
+<li><strong>id</strong>: The sound ID.</li>
+<li><strong>name</strong>: The sound name.</li>
+<li><strong>tags</strong>: The sound&rsquo;s tags.</li>
+<li><strong>username</strong>: The user who uploaded the current sound.</li>
+<li><strong>license</strong>: The license provided.</li>
+</ul></li>
+</ul></li>
+<li><strong>previous</strong>: A link to the previous page of results (nil if none).</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -932,6 +2615,78 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the sound to get comments made on.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page number of results to retrieve (nil by default).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The size of each returned page (nil by default, given in sounds-per-page).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that handles the response data, an optional dictionary with the following keys:
+
+<ul>
+<li><strong>count</strong>: The number of results on the page.</li>
+<li><strong>next</strong>: A link to the next page of results (nil if none).</li>
+<li><strong>results</strong>: An array of dictionaries representing information about the packs on the current page.
+
+<ul>
+<li>Each of these dictionaries contains, by default, the following keys:
+
+<ul>
+<li><strong>username</strong>: Username of the comment author.</li>
+<li><strong>comment</strong>: The comment itself.</li>
+<li><strong>created</strong>: Date the comment was made.</li>
+</ul></li>
+</ul></li>
+<li><strong>previous</strong>: A link to the previous page of results (nil if none).</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -940,7 +2695,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/nikhilsinghmus/FreesoundKit" target="_blank" rel="external">nikhilsinghmus</a>. All rights reserved. (Last updated: 2018-06-11)</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/nikhilsinghmus/FreesoundKit" target="_blank" rel="external">nikhilsinghmus</a>. All rights reserved. (Last updated: 2018-06-12)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

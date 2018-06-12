@@ -1,761 +1,761 @@
 {
   "warnings": [
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/Freesound.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/Freesound.swift",
       "line": 12,
       "symbol": "FreesoundHandler",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 12,
       "symbol": "FreesoundDescriptor.string",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 17,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 18,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_complexity",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 19,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.silence_rate_20dB",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 20,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.erb_bands",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 21,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.average_loudness",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 22,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_rms",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 23,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_kurtosis",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 24,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.barkbands_kurtosis",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 25,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.scvalleys",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 26,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_spread",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 27,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.pitch",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 28,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.dissonance",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 29,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_energyband_high",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 30,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.gfcc",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 31,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_flux",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 32,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.silence_rate_30dB",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 33,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_contrast",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 34,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_energyband_middle_high",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 35,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.barkbands_spread",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 36,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_centroid",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 37,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.pitch_salience",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 38,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.silence_rate_60dB",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 39,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_entropy",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 40,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_rolloff",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 41,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.barkbands",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 42,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_energyband_low",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 43,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.barkbands_skewness",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 44,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.pitch_instantaneous_confidence",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 45,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_energyband_middle_low",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 46,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_strongpeak",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 47,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.startFrame",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 48,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_decrease",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 49,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.stopFrame",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 50,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.mfcc",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 51,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_energy",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 52,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_flatness_db",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 53,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.frequency_bands",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 54,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.zerocrossingrate",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 55,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_skewness",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 56,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.hfc",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 57,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.spectral_crest",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 59,
       "symbol": "FreesoundAnalysisDescriptors.LowLevel.string",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 64,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 65,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.first_peak_bpm",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 66,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.onset_times",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 67,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.beats_count",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 68,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.beats_loudness",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 69,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.first_peak_spread",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 70,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.second_peak_weight",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 71,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.bpm",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 72,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.bpm_intervals",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 73,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.onset_count",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 74,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.second_peak_spread",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 75,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.beats_loudness_band_ratio",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 76,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.second_peak_bpm",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 77,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.onset_rate",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 78,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.beats_position",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 79,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.first_peak_weight",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 81,
       "symbol": "FreesoundAnalysisDescriptors.Rhythm.string",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 86,
       "symbol": "FreesoundAnalysisDescriptors.Tonal",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 87,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.hpcp_entropy",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 88,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.chords_scale",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 89,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.chords_number_rate",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 90,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.key_strength",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 91,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.chords_progression",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 92,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.key_scale",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 93,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.chords_strength",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 94,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.key_key",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 95,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.chords_changes_rate",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 96,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.chords_count",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 97,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.hpcp_crest",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 98,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.chords_histogram",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 99,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.chords_key",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 100,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.tuning_frequency",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 101,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.hpcp_peak_count",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 102,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.hpcp",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 104,
       "symbol": "FreesoundAnalysisDescriptors.Tonal.string",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 109,
       "symbol": "FreesoundAnalysisDescriptors.SFX",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 110,
       "symbol": "FreesoundAnalysisDescriptors.SFX.temporal_decrease",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 111,
       "symbol": "FreesoundAnalysisDescriptors.SFX.inharmonicity",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 112,
       "symbol": "FreesoundAnalysisDescriptors.SFX.pitch_min_to_total",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 113,
       "symbol": "FreesoundAnalysisDescriptors.SFX.tc_to_total",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 114,
       "symbol": "FreesoundAnalysisDescriptors.SFX.der_av_after_max",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 115,
       "symbol": "FreesoundAnalysisDescriptors.SFX.pitch_max_to_total",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 116,
       "symbol": "FreesoundAnalysisDescriptors.SFX.temporal_spread",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 117,
       "symbol": "FreesoundAnalysisDescriptors.SFX.temporal_kurtosis",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 118,
       "symbol": "FreesoundAnalysisDescriptors.SFX.logattacktime",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 119,
       "symbol": "FreesoundAnalysisDescriptors.SFX.temporal_centroid",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 120,
       "symbol": "FreesoundAnalysisDescriptors.SFX.tristimulus",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 121,
       "symbol": "FreesoundAnalysisDescriptors.SFX.max_der_before_max",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 122,
       "symbol": "FreesoundAnalysisDescriptors.SFX.strongdecay",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 123,
       "symbol": "FreesoundAnalysisDescriptors.SFX.pitch_centroid",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 124,
       "symbol": "FreesoundAnalysisDescriptors.SFX.duration",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 125,
       "symbol": "FreesoundAnalysisDescriptors.SFX.temporal_skewness",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 126,
       "symbol": "FreesoundAnalysisDescriptors.SFX.effective_duration",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 127,
       "symbol": "FreesoundAnalysisDescriptors.SFX.max_to_total",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 128,
       "symbol": "FreesoundAnalysisDescriptors.SFX.oddtoevenharmonicenergyratio",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 129,
       "symbol": "FreesoundAnalysisDescriptors.SFX.pitch_after_max_to_before_max_energy_ratio",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundAnalysisDescriptors.swift",
       "line": 131,
       "symbol": "FreesoundAnalysisDescriptors.SFX.string",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundOtherEnums.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundOtherEnums.swift",
       "line": 12,
       "symbol": "FreesoundLicense.attribution",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundOtherEnums.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundOtherEnums.swift",
       "line": 13,
       "symbol": "FreesoundLicense.attributionNoncommercial",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundOtherEnums.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundOtherEnums.swift",
       "line": 14,
       "symbol": "FreesoundLicense.creativeCommons0",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundOtherEnums.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundOtherEnums.swift",
       "line": 19,
       "symbol": "FreesoundResult.failure",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundOtherEnums.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundOtherEnums.swift",
       "line": 19,
       "symbol": "FreesoundResult.success",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundOtherEnums.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundOtherEnums.swift",
       "line": 24,
       "symbol": "FreesoundPreviewQuality.high",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/nikhilsingh/FreesoundKit/FreesoundKit/Classes/FreesoundOtherEnums.swift",
+      "file": "/Users/nikhilsingh/Desktop/FreesoundKit/FreesoundKit/Classes/FreesoundOtherEnums.swift",
       "line": 24,
       "symbol": "FreesoundPreviewQuality.low",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/nikhilsingh/FreesoundKit"
+  "source_directory": "/Users/nikhilsingh/Desktop/FreesoundKit"
 }
